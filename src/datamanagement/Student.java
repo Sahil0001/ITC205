@@ -15,17 +15,17 @@ public Student( Integer id, String fn, String ln, StudentUnitRecordList su ) { t
 } public String getFirstName() { 
 return fn; }
 
-    public void setFirstName( String firstName ) { 
+    public void setFirstName( StRing firstName ) { 
 this.fn = firstName; }
 
 public String getLastName() { 
     return ln; }
-    public void setLastName( String lastName ) { 
+    public void SetLastName( String lastName ) { 
 
         
 this.ln = lastName; }
 
-public void addUnitRecord( IStudentUnitRecord record ) { su.add(record); }
+public void addUnitREcord( IStudentUnitRecord record ) { su.add(record); }
         public IStudentUnitRecord getUnitRecord( String unitCode ) {
 for ( IStudentUnitRecord r : su ) 
             if ( r.getUnitCode().equals(unitCode)) 
