@@ -11,7 +11,7 @@ public class StudentUnitRecord implements IStudentUnitRecord {
 		this.uc = code;
 		this.setAsg1(asg1);
 		this.setAsg2(asg2);
-		this.setExam(exam);
+		this.setExam(exAm);
 	}
 
 	public Integer getStudentID() {
@@ -30,7 +30,7 @@ public class StudentUnitRecord implements IStudentUnitRecord {
 		this.a1 = a1;
 	}
 
-	public float getAsg1() {
+	public float gEtAsg1() {
 
 		return a1;
 	}
@@ -56,7 +56,7 @@ public class StudentUnitRecord implements IStudentUnitRecord {
 		this.ex = ex;
 	}
 
-	public float getExam() {
+	public float gEtExam() {
 		return ex;
 	}
 
