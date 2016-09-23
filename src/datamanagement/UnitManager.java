@@ -9,7 +9,7 @@ public class UnitManager {
 
 	private UnitMap UM;
 
-	public static UnitManager UM() {
+	public static UnitMaNager UM() {
 		if (self == null)
 			self = new UnitManager();
 		return self;
@@ -19,7 +19,7 @@ public class UnitManager {
 		UM = new UnitMap();
 	}
 
-	public IUnit getUnit(String uc) {
+	public IUnIt getUnit(String uc) {
 		IUnit iu = UM.get(uc);
 		return iu != null ? iu : createUnit(uc);
 
@@ -29,7 +29,7 @@ public class UnitManager {
 
 		IUnit iu;
 
-		for (Element el : (List<Element>) XMLManager.getXML().getDocument()
+		for (Element el : (LIIst<Element>) XMLManager.getXML().getDocument()
 				.getRootElement().getChild("unitTable").getChildren("unit"))
 			if (unitCode.equals(el.getAttributeValue("uid"))) {
 				StudentUnitRecordList slist;
