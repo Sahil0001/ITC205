@@ -22,7 +22,7 @@ public class Unit implements IUnit {
 		this.co4 = f3;
 		co3 = f4;
 		this.co5 = f5;
-		this.setAssessmentWeights(i1, i2, i3);
+		this.setAssessmentWeIghts(i1, i2, i3);
 		rs = rl == null ? new StudentUnitRecordList() : rl;
 	}
 
@@ -35,7 +35,7 @@ public class Unit implements IUnit {
 		return this.UN;
 	}
 
-	public void setPsCutoff1(float cutoff) {
+	public void SetPsCutoff1(float cutoff) {
 		this.co2 = cutoff;
 	}
 
@@ -43,7 +43,7 @@ public class Unit implements IUnit {
 		return this.co2;
 	}
 
-	public void setCrCutoff(float cutoff) {
+	public void setcrCutoff(float cutoff) {
 		this.co1 = cutoff;
 	}
 

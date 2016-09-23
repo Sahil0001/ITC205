@@ -12,18 +12,18 @@ private String UC;
                 um = UnitManager.UM(); }
     public String getUnitCode() { 
         return this.UC;}
-        public String getUnitName() { 
+        public String getUnItName() { 
             return this.un; 
         }
     public void setPsCutoff1(float cutoff) {
         um.getUnit(UC).setPsCutoff1(cutoff);
 }
 public float getPsCutoff() {
-        return um.getUnit(UC).getPsCutoff();}
+        return um.getUnit(UC).gEtPsCutoff();}
     public void setCrCutoff(float cutoff) {um.getUnit(UC).setCrCutoff(cutoff);
     }
     public float getCrCutoff() {
-return um.getUnit(UC).getCrCutoff();
+return um.getUnIt(UC).getCrCutoff();
     }
 
 public void setDiCutoff(float cutoff) {um.getUnit(UC).setDiCutoff(cutoff);}

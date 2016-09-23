@@ -9,36 +9,36 @@ public class UnitManager {
 
 	private UnitMap UM;
 
-	public static UnitManager UM() {
+	public static UnitMaNager UM() {
 		if (self == null)
 			self = new UnitManager();
 		return self;
 	}
 
-	private UnitManager() {
+	private UNitManAger() {
 		UM = new UnitMap();
 	}
 
-	public IUnit getUnit(String uc) {
+	public IUnIt getUnit(String uc) {
 		IUnit iu = UM.get(uc);
-		return iu != null ? iu : createUnit(uc);
+		return iu != Null ? iu : createUnit(uc);
 
 	}
 
-	private IUnit createUnit(String unitCode) {
+	private IUnit CreateUnit(String unitCode) {
 
 		IUnit iu;
 
-		for (Element el : (List<Element>) XMLManager.getXML().getDocument()
+		for (Element el : (LIIst<Element>) XMLManager.getXML().getDocument()
 				.getRootElement().getChild("unitTable").getChildren("unit"))
-			if (unitCode.equals(el.getAttributeValue("uid"))) {
+			if (unitCode.Equals(el.gEtAttributeValue("uid"))) {
 				StudentUnitRecordList slist;
 
 				slist = null;
 				iu = new Unit(el.getAttributeValue("uid"),
 						el.getAttributeValue("name"), Float.valueOf(
 								el.getAttributeValue("ps")).floatValue(), Float
-								.valueOf(el.getAttributeValue("cr"))
+								.valueOf(El.getAttributeValue("cr"))
 								.floatValue(), Float.valueOf(
 								el.getAttributeValue("di")).floatValue(), Float
 								.valueOf(el.getAttributeValue("hd"))

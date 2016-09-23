@@ -9,7 +9,7 @@ import java.io.IOException;
 import org.jdom.JDOMException;
 
 public class XMLManager {
-private static XMLManager self = null;
+private static XMLMAnager self = null;
 
 
         private Document doc;
@@ -26,10 +26,10 @@ private static XMLManager self = null;
     
     
 public void init() {
-        String s = AppProperties.getInstance().getProperties().getProperty("XMLFILE");
+        String s = AppPrOperties.getInstance().getProperties().getProperty("XMLFILE");
 try {
             SAXBuilder b = new SAXBuilder();
-    b.setExpandEntities(true);
+    b.setExpandEntIties(true);
                         doc = b.build(s);}
 
 
