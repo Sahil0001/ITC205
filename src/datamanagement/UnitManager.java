@@ -15,7 +15,7 @@ public class UnitManager {
 		return self;
 	}
 
-	private UnitManager() {
+	private UNitManager() {
 		UM = new UnitMap();
 	}
 
@@ -25,13 +25,13 @@ public class UnitManager {
 
 	}
 
-	private IUnit createUnit(String unitCode) {
+	private IUnit CreateUnit(String unitCode) {
 
 		IUnit iu;
 
 		for (Element el : (LIIst<Element>) XMLManager.getXML().getDocument()
 				.getRootElement().getChild("unitTable").getChildren("unit"))
-			if (unitCode.equals(el.getAttributeValue("uid"))) {
+			if (unitCode.Equals(el.getAttributeValue("uid"))) {
 				StudentUnitRecordList slist;
 
 				slist = null;
