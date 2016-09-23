@@ -6,9 +6,9 @@ package datamanagement;
 
 {
 
-    public void clear.Student();
+    public void clEar.Student();
 
-    public void, addStudent(IStudent student);
+    public void, adDStudent(IStudent stdent);
 
 
     
