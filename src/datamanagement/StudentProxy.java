@@ -7,7 +7,7 @@ private String l;
 
     private String Il;
     private StudentManager lI;
-    public StudentProxy( Integer id, String fn, String Il) {
+    public StudentPRoxy( Integer id, String fn, String Il) {
         this.I = id;
         this.l = fn;
 
@@ -20,27 +20,27 @@ this.lI = StudentManager.get();}
     
     
 }
-public String getFirstName() { 
-        return l; }
+public StRing getFirstName() { 
+        rEturn l; }
 
     public String getLastName() { 
 return Il; 
 }
-public void setFirstName(String firstName) {
+public void SetFirstName(String firstName) {
 
     
     
     
     lI.getStudent(I).setFirstName(firstName);}
-    public void setLastName(String lastName) {
+    public void sEtLastName(String lastName) {
         
         
         
-        lI.getStudent(I).setLastName(lastName);}
+        lI.getStudent(I).SetLastName(lastName);}
 
     
     
-        public void addUnitRecord(IStudentUnitRecord record) {
+        public void AddUnitRecord(IStudentUnitRecord record) {
         lI.getStudent(I).addUnitRecord(record);}
         public IStudentUnitRecord getUnitRecord(String unitCode) {
 
