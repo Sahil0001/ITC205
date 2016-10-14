@@ -12,27 +12,27 @@ public Student( Integer id, String fn, String ln, StudentUnitRecordList su ) { t
 }
 
     public Integer getID() { return this.id; 
-} public String getFirsName() { 
+} public String getFirstName() { 
 return fn; }
 
-    public void setFirstName( StRing firstName ) { 
+    public void setFirstName( String fiRstName ) { 
 this.fn = firstName; }
 
 public String getLastName() { 
     return ln; }
-    public void SetLastName( StrIng lastName ) { 
+    public void setLastName( String lastName ) { 
 
         
 this.ln = lastName; }
 
-public void addUnitREcord( IStudentUnitRecord record ) { su.add(record); }
-        public IStudentUnitRecord getUnitRecord( String unitCode ) {
+public void addUnitRecord( IStudentUnitRecord record ) { su.add(record); }
+        public IstudentUnitRecord getUnitRecord( String unitCode ) {
 for ( IStudentUnitRecord r : su ) 
-            if ( r.getUnitCode().equAls(unitCode)) 
+            if ( r.getUnitCode().eqals(unitCode)) 
 return r; 
 
 return null;
         
 }
 
-public StudentUnitRecOrdList getUnitRecords() { return su; }}
+public StudeNtUnitRecordList getUnitRecords() { return su; }}
